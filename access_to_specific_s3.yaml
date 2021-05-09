@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::lt-rhcsa5",
+                "arn:aws:s3:::lt-rhcsa5/*",
+                "arn:aws:s3:::/rhel8/www/html/owncloud/data/papaand1/files/RHCSA4/Videos",
+                "arn:aws:s3:::/rhel8/www/html/owncloud/data/papaand1/files/RHCSA4/Videos/*",
+                "arn:aws:s3:::scripts-lt/data/papaand1/files/RHCSA4/Videos",
+                "arn:aws:s3:::scripts-lt/data/papaand1/files/RHCSA4/Videos/*"
+            ]
+        }
+    ]
+}
